@@ -12,7 +12,7 @@
   "preloadedDependencies": [{
     "machineName": "H5P.MUStudentAdvisors",
     "majorVersion": 1,
-    "minorVersion": 3 
+    "minorVersion": 0 
   }],
   "mainLibrary": "H5P.MUStudentAdvisors",
   "embedTypes": ["div"]
