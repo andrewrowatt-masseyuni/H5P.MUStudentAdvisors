@@ -74,7 +74,7 @@ H5P.MUStudentAdvisors = (function ($) {
 		if(studentadvisor.email) html += '<div class="studentadvisor-item email-text studentadvisor-item-icon"><a href="mailto:' + studentadvisor.email + '">' + studentadvisor.email + '</a></div>';
 		if(studentadvisor.phone) html += '<div class="studentadvisor-item phone-text studentadvisor-item-icon">' + studentadvisor.phone + '</div>';
 		
-		if(studentadvisor.shortbio) html += '<hr /><div class="studentadvisor-item shortbio-text studentadvisor-item-icon">' + studentadvisor.shortbio + '</div>';
+		if(studentadvisor.about) html += '<hr /><div class="studentadvisor-item about-text studentadvisor-item-icon">' + studentadvisor.about + '</div>';
 		
 		if(studentadvisor.link) html += '<div class="link-text"><a title="Click for more information" target="_blank" href="' + studentadvisor.link + '">More...</a></div>';
 

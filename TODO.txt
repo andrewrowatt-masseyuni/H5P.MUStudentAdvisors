@@ -1,19 +1,11 @@
 https://stream-dev.massey.ac.nz/h5p/libraries.php
 
+via Sarah:
+Something similar to the teaching Team
 
-
-
-Add "Profile" option with:
-default:Default
-coca1:College of Creative Arts Default
-
-
-
-Profile to set:
-colour accent (override for coca1) i.e., Orange
-font (override for coca1)
-change "Office Hours" label to "Open Hours"
-
-Ref:
-https://stream.massey.ac.nz/course/view.php?id=71605
-"Your teaching team"
+Photo
+Name
+Iwi/hapu
+Role
+email
+About/Pepeha

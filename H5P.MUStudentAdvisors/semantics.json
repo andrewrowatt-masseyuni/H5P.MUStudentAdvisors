@@ -105,14 +105,14 @@
 		}
 		,
 		{
-		  "name": "shortbio",
+		  "name": "about",
 		  "type": "text",
 		  "widget": "textarea",
 		  "maxLength": 2048,
-		  "label": "Short biography",
+		  "label": "About/Pepeha",
 		  "optional": true,
 		  "default": "",
-		  "description": "Short biography. Two or three lines is the recommended maximum. Leave blank to not display this field for this student advisor."
+		  "description": "Two or three lines is the recommended maximum. Leave blank to not display this field for this student advisor."
 		}
 		,
 		{
@@ -121,7 +121,7 @@
 		  "label": "Link",
 		  "optional": true,
 		  "default": "",
-		  "description": "A link to further information for this studentadvisor. If present, a \"More...\" link will be displayed after the student advisor details. Leave blank to not use the feature for this student advisor."
+		  "description": "A link to further information for this student advisor. If present, a \"More...\" link will be displayed after the student advisor details. Leave blank to not use the feature for this student advisor."
 		}
 	  ]
 	}

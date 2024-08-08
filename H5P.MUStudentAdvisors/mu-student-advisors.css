@@ -156,11 +156,11 @@ p { margin: 0;}
 	height: 1px;
 }
 
-.h5p-studentadvisors .studentadvisor .shortbio-text {
+.h5p-studentadvisors .studentadvisor .about-text {
 	font-size: 15px;
 }
 
-.h5p-studentadvisors .studentadvisor .shortbio-text::before {
+.h5p-studentadvisors .studentadvisor .about-text::before {
 	display: none;
 }
 
