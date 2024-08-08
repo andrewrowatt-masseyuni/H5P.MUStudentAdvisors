@@ -1,0 +1,28 @@
+{
+  "title": "MU Student Advisors",
+  "description": "Student Advisors widget for MU template.",
+  "majorVersion": 1,
+  "minorVersion": 3,
+  "patchVersion": 83,
+  "runnable": 1,
+  "author": "Massey University",
+  "license": "cc-by-sa",
+  "machineName": "H5P.MUStudentAdvisors",
+  "coreApi": {
+    "majorVersion": 1,
+    "minorVersion": 0
+  },
+  "preloadedJs": [
+    { "path": "mu-student-advisors.js" }
+  ],
+  "preloadedCss": [
+    {"path": "mu-student-advisors.css"}
+  ],
+  "editorDependencies": [
+    {
+      "machineName": "H5PEditor.VerticalTabs",
+      "majorVersion": 1,
+      "minorVersion": 3
+    }
+  ]
+}
