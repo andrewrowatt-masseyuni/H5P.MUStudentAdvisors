@@ -3,40 +3,61 @@
 
 @font-face{font-family:'FontAwesome';font-style:normal;font-weight:400;src:url(//netdna.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0);src:url('//netdna.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),url(//netdna.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0) format('woff'),url(//netdna.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0) format('truetype'),url('//netdna.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg')}
 
+:root {
+	--accent1-mu-blue1: #4c81af;
+	--background1-mu-blue1: #f4f7f9;
+
+	--accent1-mu-green1: #81ab5f;
+	--background1-mu-green1: #f2f7ef;
+
+	--accent1-default: var(--accent1-mu-blue1);
+	--background1-default: var(--background1-mu-blue1);
+}
+
 /* user agent style reset items */
 p { margin: 0;}
+strong { font-weight:  500;}
 
 .h5p-studentadvisors {
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  
-  font-family: "Roboto",Georgia,"Times New Roman",Times,serif;
-  font-weight: 300;
-  font-size: 16px; /* Snap default is 18px */
-  line-height: 1.4em;
-  color: #565656;
-  gap:8px;
+	--accent1: var(--accent1-default);
+	--background1: var(--background1-default);
+
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+
+	font-family: "Roboto",Georgia,"Times New Roman",Times,serif;
+	font-weight: 300;
+	font-size: 16px; /* Snap default is 18px */
+	line-height: 1.4em;
+	color: #696969; /* #565656; */
+	
+	gap:16px;
 }
 
-.h5p-studentadvisors .studentadvisor {
-    border-color: #d1d6da;
-    border-style: solid;
-    border-width: 1px;
-    width: 242px;
-    border-radius: 12px;
-	display: block;
-	position: relative;
-	padding-bottom: 24px; /* Space for more info */
+.h5p-studentadvisors.h5p-studentadvisors-colourset-mu-green1 {
+	--accent1: var(--accent1-mu-green1);
+	--background1: var(--background1-mu-green1);
 }
 
-.h5p-studentadvisors-optionset-coca1  {
+.h5p-studentadvisors.h5p-studentadvisors-optionset-coca1 {
 	font-family: "Source Sans Pro",Georgia,"Times New Roman",Times,serif;
 }
 
-.h5p-studentadvisors-optionset-coca1 .studentadvisor {
-	border-color: #ff9800;
+.h5p-studentadvisors .studentadvisor {
+    border-color: var(--accent1);
+    border-style: solid;
+    /* border-width: 1px; */
+    width: 242px;
+    /* border-radius: 12px; */
+	display: block;
+	position: relative;
+	padding-bottom: 24px; /* Space for more info */
+
+	border-color: var(--background1) var(--background1) var(--background1) var(--accent1);
+    background-color: var(--background1);
+	border-width: 0 0 0 10px;
 }
 
 .h5p-studentadvisors.h5p-studentadvisors-twocol .studentadvisor {
@@ -77,18 +98,40 @@ p { margin: 0;}
 }
 
 .h5p-studentadvisors .studentadvisor .profile-image {
-	width: 150px;
-	height: 150px;
-	object-fit: contain;
+	width: 200px;
+	height: 200px;
 	margin: 1em auto;
+	position: relative;
+	background-size: cover;
+}
+
+.h5p-studentadvisors .studentadvisor .profile-image::after {
+	content: "";
+    backdrop-filter: blur(4px);
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 0;
+	/* background-color: #fff9; */
+}
+
+.profile-image img {
+	max-width: 100%;
+    max-height: 100%;
+	margin: 0 auto;
 	display: block;
+	z-index: 1;
+    position: relative;
 }
 
 .h5p-studentadvisors .studentadvisor .name-text {
-	font-size: 18px;
+	font-size: 24px;
+	font-weight: 400;
 }
 
 .h5p-studentadvisors .studentadvisor .iwi-text {
+	font-style: italic;
 }
 
 .h5p-studentadvisors .studentadvisor .role-text {
@@ -151,9 +194,15 @@ p { margin: 0;}
 }
 
 .h5p-studentadvisors .studentadvisor hr {
+	border:0;
 	margin: 0 18px 5px 18px;
-	background-color: #d1d6da;
+	background-color: var(--accent1);
 	height: 1px;
+}
+
+/* assumes the hr is added using the H5P html widget */
+.h5p-studentadvisors .studentadvisor .studentadvisor-item hr {
+	margin: 7px 0;
 }
 
 .h5p-studentadvisors .studentadvisor .about-text {

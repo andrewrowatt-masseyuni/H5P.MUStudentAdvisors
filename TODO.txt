@@ -1,11 +1,9 @@
 https://stream-dev.massey.ac.nz/h5p/libraries.php
 
 via Sarah:
-Something similar to the teaching Team
+Course: 151131 Introduction to Food and Nutrition | Stream
+https://stream.massey.ac.nz/course/view.php?id=69517#section-0
 
-Photo
-Name
-Iwi/hapu
-Role
-email
-About/Pepeha
+To-do:
+Update help text for "About" field.
+Add one column layout. Auto to default to one column if only one item.

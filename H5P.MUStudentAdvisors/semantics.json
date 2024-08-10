@@ -8,14 +8,14 @@
         "label": "Default"
       }
     ],
-  "label": "studentadvisors",
-  "entity": "studentadvisor",
+  "label": "Student Advisors",
+  "entity": "advisor",
   "min": 1,
   "max": 20,
   "field": {
-	  "name": "studentadvisor",
+	  "name": "advisor",
 	  "type": "group",
-	  "label": "studentadvisor",
+	  "label": "Advisor",
 	  "fields": [
 		{
 		  "name": "image",
@@ -29,7 +29,7 @@
 		  "type": "text",
 		  "label": "Name",
 		  "default": "",
-		  "description": "Name of studentadvisor"
+		  "description": "Name of student advisor"
 		},
 		{
 		  "name": "iwi",
@@ -43,58 +43,9 @@
 		  "name": "role",
 		  "type": "text",
 		  "label": "Role",
-		  "default": "",
-		  "description": "Role of studentadvisor e.g. Course Coordinator, Tutor"
+		  "default": "Student Advisor",
+		  "description": "Role of student advisor. Include campus or cohort if required."
 		},
-				{
-		  "name": "office",
-		  "type": "text",
-		  "label": "Office",
-		  "optional": true,
-		  "default": "",
-		  "description": "Office location and number. Leave blank to not display this field for this student advisor."
-		},
-				{
-		  "name": "officebuilding",
-		  "type": "text",
-		  "label": "Building",
-		  "optional": true,
-		  "default": "",
-		  "description": "Office building. Leave blank to not display this field for this student advisor."
-		},
-				{
-		  "name": "officecampus",
-		  "type": "text",
-		  "label": "Campus",
-		  "optional": true,
-		  "default": "",
-		  "description": "Office campus. Leave blank to not display this field for this student advisor."
-		},
-		{
-		  "name": "officehours",
-		  "type": "text","widget": "html",
-		  "label": "Office Hours",
-		  "optional": true,
-		  "default": "",
-		  "description": "Office Hours. Leave blank to not display this field for this student advisor.",
-		  "enterMode": "p",
-		"tags": [
-			  "strong",
-			  "em",
-			  "u",
-			  "a",
-			  "hr"
-		]
-		},
-		{
-		  "name": "phone",
-		  "type": "text",
-		  "label": "Phone",
-		  "optional": true,
-		  "default": "",
-		  "description": "Contact phone number or extension. Leave blank to not display this field for this student advisor."
-		}
-		,
 		{
 		  "name": "email",
 		  "type": "text",
@@ -102,19 +53,26 @@
 		  "optional": true,
 		  "default": "",
 		  "description": "Email address. Displayed as a clickable link. Leave blank to not display this field for this student advisor."
-		}
-		,
+		},
 		{
 		  "name": "about",
 		  "type": "text",
-		  "widget": "textarea",
+		  "widget": "html",
 		  "maxLength": 2048,
-		  "label": "About/Pepeha",
+		  "label": "About",
 		  "optional": true,
 		  "default": "",
-		  "description": "Two or three lines is the recommended maximum. Leave blank to not display this field for this student advisor."
-		}
-		,
+		  "description": "Free-text area for . Leave blank to not display this field for this student advisor.",
+		  "enterMode": "p",
+			"tags": [
+				"strong",
+				"em",
+				"u",
+				"a",
+				"hr"
+			]
+		},
+		
 		{
 		  "name": "link",
 		  "type": "text",
@@ -158,7 +116,7 @@
   "description": "The option set for this set of items.",
   "options": [
     {
-      "value": "default",
+      "value": "optionset1",
       "label": "Standard"
     },
     {
@@ -167,5 +125,23 @@
     }
   ],
   "default": "default"
+}
+,
+{
+  "name": "colourset",
+  "type": "select",
+  "label": "Colour set",
+  "description": "The option set for this set of items.",
+  "options": [
+    {
+      "value": "mu-blue1",
+      "label": "Blue (Default)"
+    },
+	{
+		"value": "mu-green1",
+		"label": "Green"
+	  }
+  ],
+  "default": "mu-blue1"
 }
 ]
