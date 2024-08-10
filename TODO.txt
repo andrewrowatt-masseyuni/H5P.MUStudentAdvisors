@@ -5,5 +5,5 @@ Course: 151131 Introduction to Food and Nutrition | Stream
 https://stream.massey.ac.nz/course/view.php?id=69517#section-0
 
 To-do:
-Update help text for "About" field.
+Complete help text for "About" field.
 Add one column layout. Auto to default to one column if only one item.
