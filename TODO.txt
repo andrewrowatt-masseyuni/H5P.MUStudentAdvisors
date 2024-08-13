@@ -7,3 +7,4 @@ https://stream.massey.ac.nz/course/view.php?id=69517#section-0
 To-do:
 Complete help text for "About" field.
 Add one column layout. Auto to default to one column if only one item.
+Add "Show more" option? to expand About?
